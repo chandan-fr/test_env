@@ -2,6 +2,7 @@ package com.experiment;
 
 import android.annotation.SuppressLint;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -55,5 +56,10 @@ public class CalendarModule extends ReactContextBaseJavaModule {
         } catch (Exception e) {
             promise.reject("Error", e);
         }
+    }
+
+    @ReactMethod
+    public void showToast (String toast){
+        Toast.makeText(reactContext, toast, Toast.LENGTH_LONG).show();
     }
 }

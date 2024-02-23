@@ -4,6 +4,7 @@ import Exp1 from './src/screens/Exp1';
 import CalendarNativeModule from './src/screens/CalendarNativeModule';
 import LottieAnimation from './src/screens/LottieAnimation';
 import Debouncing from './src/screens/Debouncing';
+import LiveSearch from './src/screens/LiveSearch';
 
 const App = (): JSX.Element => {
   return (
@@ -11,7 +12,8 @@ const App = (): JSX.Element => {
       {/* <Exp1 /> */}
       {/* <CalendarNativeModule/> */}
       {/* <LottieAnimation/> */}
-      <Debouncing />
+      {/* <Debouncing /> */}
+      <LiveSearch />
     </View>
   );
 };
