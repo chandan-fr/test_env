@@ -36,7 +36,7 @@ const LiveSearch = () => {
             setLoading(false);
             CalendarModule.showToast("User Fetched");
         } catch (exc: any) {
-            // console.log("Error =>>", exc.message);
+            setUsers("");
             setLoading(false);
             CalendarModule.showToast(exc.message);
         }
@@ -60,7 +60,7 @@ const LiveSearch = () => {
                 />
 
                 <View style={styles.textBody}>
-                    <Text style={styles.para}>
+                    <Text selectable style={styles.para}>
                         {users ? users : "No Data Found!"}
                     </Text>
                 </View>
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         padding: 10,
         alignItems: 'center',
         justifyContent: "center",
-        maxHeight: 300,
+        maxHeight: 200,
         borderColor: "#435970",
         flex: 1,
     },
