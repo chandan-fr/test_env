@@ -5,15 +5,19 @@ import CalendarNativeModule from './src/screens/CalendarNativeModule';
 import LottieAnimation from './src/screens/LottieAnimation';
 import Debouncing from './src/screens/Debouncing';
 import LiveSearch from './src/screens/LiveSearch';
+import Card from './src/utility/Card';
+
 
 const App = (): JSX.Element => {
+
   return (
     <View style={{ flex: 1 }}>
       {/* <Exp1 /> */}
       {/* <CalendarNativeModule/> */}
       {/* <LottieAnimation/> */}
-      {/* <Debouncing /> */}
-      <LiveSearch />
+      <Debouncing />
+      {/* <LiveSearch /> */}
+      {/* <Card item={data} /> */}
     </View>
   );
 };
