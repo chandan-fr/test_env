@@ -2,7 +2,7 @@ import { Button, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Card from '../utility/Card';
 
-const Debouncing = ({ }) => {
+const Debouncing = ({ }):JSX.Element => {
     const data = {
         "id": "1",
         "name": "Leanne Graham",
